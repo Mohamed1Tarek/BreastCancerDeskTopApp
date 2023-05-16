@@ -8,7 +8,7 @@ from PyQt5.uic import loadUi
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import Qt
 
-from dataenterscreen import*
+from information import Information
 from LoginAndRegister import LoginScreen
 
 class CreateAccScreen(QDialog):
@@ -39,7 +39,7 @@ class CreateAccScreen(QDialog):
         elif password != confirmpassword:
             self.error.setText("Passwords do not match.")
         else:
-            conn = sqlite3.connect("../Model/users.db")
+            conn = sqlite3.connect("../Database/users.db")
             cur = conn.cursor()
 
             user_info = [user, password]
@@ -49,6 +49,6 @@ class CreateAccScreen(QDialog):
             conn.commit()
             conn.close()
 
-            dataenter = dataenterScreen()
+            dataenter = Information(self.app, self.widget)
             self.widget.addWidget(dataenter)
             self.widget.setCurrentIndex(self.widget.currentIndex()+1)

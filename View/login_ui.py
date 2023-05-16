@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Users\moham\BreastCancerDeskTop\login.ui'
+# Form implementation generated from reading ui file 'c:\Users\moham\BreastCancerDeskTop\View\login.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -9,20 +9,19 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QVBoxLayout,QHBoxLayout,QGroupBox,QMessageBox
 
-vbox = QVBoxLayout()
+
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(1200, 794)
+        Dialog.resize(1920, 1100)
         self.bgwidget = QtWidgets.QWidget(Dialog)
-        self.bgwidget.setGeometry(QtCore.QRect(0, 0, 1201, 801))
+        self.bgwidget.setGeometry(QtCore.QRect(0, 0, 1920, 1100))
         self.bgwidget.setStyleSheet("QWidget#bgwidget{\n"
 "background-color:qlineargradient(spread:pad, x1:0.091, y1:0.101636, x2:0.991379, y2:0.977, stop:0 rgba(209, 107, 165, 255), stop:1 rgba(255, 255, 255, 255));}")
         self.bgwidget.setObjectName("bgwidget")
         self.label = QtWidgets.QLabel(self.bgwidget)
-        self.label.setGeometry(QtCore.QRect(670, 170, 301, 451))
+        self.label.setGeometry(QtCore.QRect(1070, 280, 301, 451))
         font = QtGui.QFont()
         font.setPointSize(15)
         self.label.setFont(font)
@@ -32,14 +31,14 @@ class Ui_Dialog(object):
         self.label.setText("")
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.bgwidget)
-        self.label_2.setGeometry(QtCore.QRect(240, 140, 431, 521))
+        self.label_2.setGeometry(QtCore.QRect(640, 250, 431, 521))
         self.label_2.setStyleSheet("Background-image:url(:/Images/Hand.png);\n"
 "background-color:qlineargradient(spread:pad, x1:0.091, y1:0.101636, x2:0.991379, y2:0.977, stop:0 rgba(209, 107, 165, 255), stop:1 rgba(255, 255, 255, 255));\n"
 "border-radius:20px;")
         self.label_2.setText("")
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.bgwidget)
-        self.label_3.setGeometry(QtCore.QRect(690, 180, 161, 61))
+        self.label_3.setGeometry(QtCore.QRect(1090, 290, 161, 61))
         font = QtGui.QFont()
         font.setFamily("12 1px Calibri")
         font.setPointSize(22)
@@ -47,12 +46,13 @@ class Ui_Dialog(object):
         font.setItalic(False)
         font.setWeight(9)
         self.label_3.setFont(font)
-        self.label_3.setStyleSheet("color:rgb(0,0,0,200);\n"
+        self.label_3.setStyleSheet("background-color:qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 255));\n"
+"color:rgb(0,0,0,200);\n"
 "font: 75 22pt bold 1px\"Calibri\";\n"
 "")
         self.label_3.setObjectName("label_3")
         self.emailfield = QtWidgets.QLineEdit(self.bgwidget)
-        self.emailfield.setGeometry(QtCore.QRect(690, 300, 241, 40))
+        self.emailfield.setGeometry(QtCore.QRect(1090, 410, 241, 40))
         font = QtGui.QFont()
         font.setPointSize(9)
         font.setBold(True)
@@ -66,7 +66,7 @@ class Ui_Dialog(object):
         self.emailfield.setText("")
         self.emailfield.setObjectName("emailfield")
         self.passwordfield = QtWidgets.QLineEdit(self.bgwidget)
-        self.passwordfield.setGeometry(QtCore.QRect(690, 410, 241, 40))
+        self.passwordfield.setGeometry(QtCore.QRect(1090, 520, 241, 40))
         font = QtGui.QFont()
         font.setPointSize(9)
         font.setBold(True)
@@ -80,7 +80,7 @@ class Ui_Dialog(object):
         self.passwordfield.setEchoMode(QtWidgets.QLineEdit.Password)
         self.passwordfield.setObjectName("passwordfield")
         self.login = QtWidgets.QPushButton(self.bgwidget)
-        self.login.setGeometry(QtCore.QRect(750, 470, 131, 41))
+        self.login.setGeometry(QtCore.QRect(1150, 580, 131, 41))
         font = QtGui.QFont()
         font.setPointSize(11)
         font.setBold(True)
@@ -102,12 +102,12 @@ class Ui_Dialog(object):
 "}")
         self.login.setObjectName("login")
         self.label_5 = QtWidgets.QPushButton(self.bgwidget)
-        self.label_5.setGeometry(QtCore.QRect(590, 530, 341, 51))
+        self.label_5.setGeometry(QtCore.QRect(990, 640, 341, 51))
         self.label_5.setStyleSheet("background-color:rgba(0,0,0,0);text-decoration: underline;QLabel:hover;color:rgb(0, 0, 255);font: 10pt \"MS Shell Dlg 2\";")
         self.label_5.setObjectName("label_5")
         self.error = QtWidgets.QLabel(self.bgwidget)
-        self.error.setGeometry(QtCore.QRect(505, 465, 341, 20))
-        self.error.setStyleSheet("font: 12pt \"MS Shell Dlg 2\"; color:red;")
+        self.error.setGeometry(QtCore.QRect(800, 475, 500, 50))
+        self.error.setStyleSheet("font: 20pt bold \"MS Shell Dlg 2\"; color:red;")
         self.error.setText("")
         self.error.setObjectName("error")
 
@@ -122,16 +122,3 @@ class Ui_Dialog(object):
         self.passwordfield.setPlaceholderText(_translate("Dialog", "Password"))
         self.login.setText(_translate("Dialog", "L o g I n"))
         self.label_5.setText(_translate("Dialog", "Don\'t have an account"))
-import sys,loginres
-if __name__ == "__main__":
-        app = QtWidgets.QApplication(sys.argv)
-
-
-        Form = QtWidgets.QWidget()
-        ui = Ui_Dialog()
-        ui.setupUi(Form)
-
-
-
-        Form.show()
-        sys.exit(app.exec_())
